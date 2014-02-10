@@ -10,13 +10,30 @@ package documentindexsearch;
  *
  * @author james
  */
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Collection;
+
 public class DocumentIndexSearch {
 
+    private static String directoryToTraverse;  
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        //Get all the files for directory
+        if (args.length > 0) {
+            directoryToTraverse = args[0];
+        } else System.out.println("-help for more information");
+     
+        //Create a new FilingCabinet to grab files
+        
+        //Parse files from FilingCabinet
     }
+    
+    public void parseFile(File f) {
+    
+}
     
 }
